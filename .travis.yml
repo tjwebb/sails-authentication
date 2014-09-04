@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+- '0.10'
+- '0.11'
+notifications:
+  email: false
+deploy:
+  provider: npm
+  email: me@traviswebb.com
+  api_key:
+    secure: Qh4sUTub3Ys83Emyrsjdt1sbVGzK/1J1ZlglnwtHZhrIChh5kupU5IHIytMw0qHorBWqK5US/GRUgBN+uyTypTRkpEHE3ffI+6VOnyMAo1hsass3fWQNXR2NmvzGcfygaZ+nezwyEmrT83SDr4fFmoGbMFlNPfwykX9d5pi9res=
+  on:
+    tags: true
+    repo: tjwebb/sails-authentication
+    all_branches: true
